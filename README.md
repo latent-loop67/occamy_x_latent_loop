@@ -6,6 +6,8 @@ You can view a **working prototype demo** of the project here:
 
 [Demo Video & Walkthrough](https://drive.google.com/drive/folders/1gdKUyzRwEFMaupUev07sZXaObuk39bBY?usp=sharing)
 
+---
+
 ## Project Overview
 **Occamy PS-1** is a **web-based and mobile-first internal system** built for **Occamy Bioscience**, a social enterprise operating across rural India. The system replaces unreliable WhatsApp-based tracking with a **structured, auditable, and data-driven workflow** for field officers and distributors.
 
@@ -53,7 +55,8 @@ The system ensures **verifiable tracking, accountability, and analytics**, enabl
 
 ### 6. Authentication & Authorization
 - Secure login system
-- Role-based access control (Admin vs Field Officer)
+- **Role-based Gmail patterns**: Admins and distributors have different Gmail formats to distinguish roles
+- **OTP verification**: For simplicity in the demo, OTPs are verified via the Django VS Code terminal
 - JWT-based authentication
 - Protected routes/pages
 
@@ -66,14 +69,9 @@ The system ensures **verifiable tracking, accountability, and analytics**, enabl
 | Backend    | Python, Django, Django REST Framework |
 | Frontend   | React, Axios, React Router, Bootstrap 5 |
 | Database   | PostgreSQL |
-| Auth       | JWT (SimpleJWT) |
+| Auth       | JWT (SimpleJWT), OTP verification via Django terminal |
 | Maps       | Google Maps API / OpenStreetMap |
 | Offline    | Local storage sync (offline-first) |
 | Deployment | Can be hosted on Railway, Render, or Heroku |
 
----
-
-## Project Structure
-
-### Backend (`backend/`)
 
