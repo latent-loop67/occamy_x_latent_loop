@@ -25,6 +25,10 @@ urlpatterns = [
     path('api/accounts/', include('occamy.urls')),
     path('api/attendance/', include('attendance.urls')),
     path('api/dashboard/', include('dashboard.urls')),
+    path('api/meetings/', include('meetings.urls')),
+    path('api/sales/', include('sales.urls')),  
+    path('api/samples/', include('samples.urls')),
+    path('api/common/', include('common.urls')),
 ]
 
 if settings.DEBUG:

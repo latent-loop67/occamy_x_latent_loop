@@ -1,4 +1,4 @@
-# okami/tokens.py
+
 import jwt
 import datetime
 from django.conf import settings

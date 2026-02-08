@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'common',
     'attendance',
     'dashboard',
+    'meetings',
+    'sales',
+    'samples',
 ]
 
 MIDDLEWARE = [
@@ -149,3 +152,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'no-reply@occamy.local'

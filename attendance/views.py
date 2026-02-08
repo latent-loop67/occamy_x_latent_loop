@@ -14,7 +14,7 @@ class MarkAttendanceView(APIView):
     def post(self, request):
         today = timezone.now().date()
 
-        # 🔒 Prevent duplicate attendance
+        # Prevent duplicate attendance
         if Attendance.objects.filter(user=request.user, date=today).exists():
             return Response(
                 {"detail": "Attendance already marked for today"},

@@ -1,0 +1,75 @@
+.sample-form-container,
+.sample-report-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.sample-form-container h2,
+.sample-report-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.sample-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sample-table th,
+.sample-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.sample-table th {
+  background-color: #f4f4f4;
+}
+
+.sample-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sample-table tr:hover {
+  background-color: #f1f1f1;
+}
